@@ -48,7 +48,24 @@ accelerate() {
     this.charge -= 1;
     console.log(`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`);
     }
-    
 }
+
+// Task 4: Testing EV Class
+
+// Test Data: A `Tesla` starting at 120 km/h, with a charge of 23%
+const myTesla = new EV (`Tesla`, 120, 23);
+
+// Test accelerate method 
+myTesla.accelerate(); // Tesla going at 140 km/h, with a charge of 22%
+myTesla.accelerate(); // Tesla going at 160 km/h, with a charge of 21%
+
+// Test brake method 
+myTesla.brake(); // Tesla going at 155 km/h
+
+// Test chargeBattery method
+myTesla.chargeBattery(50); // Tesla battery charged to 50%
+
+// Test accelerate method after charging
+myTesla.accelerate(); // Tesla going at 175 km/h, with a charge of 49%
 
 
