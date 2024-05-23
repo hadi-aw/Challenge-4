@@ -33,4 +33,16 @@ class EV extends Car {
         super(make, speed); // Call parent class constructor
         this.charge = charge; // Additional property for EV class
     }
+
+// Task 2: Charge Battery Method
+
+// Method to charge the battery 
+
+chargeBattery(chargeTo) {
+    this.charge = chargeTo;
+    console.log(`${this.make} battery charged to ${this.charge}%`);
+    }
+    
 }
+
+
