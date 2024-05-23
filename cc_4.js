@@ -36,11 +36,17 @@ class EV extends Car {
 
 // Task 2: Charge Battery Method
 
-// Method to charge the battery 
-
 chargeBattery(chargeTo) {
     this.charge = chargeTo;
     console.log(`${this.make} battery charged to ${this.charge}%`);
+    }
+
+// Task 3: Customize Accelerate Method:
+
+accelerate() {
+    this.speed += 20;
+    this.charge -= 1;
+    console.log(`${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`);
     }
     
 }
